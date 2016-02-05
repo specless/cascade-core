@@ -1,0 +1,7 @@
+{
+	"name" : "My Awesome Ad",
+	"lastUpdated" : "March 1, 1983 01:15:00",
+	"cascadeVersion": "0.1",
+	"path": "users/..../folder",
+	"components": [{"name":"loader"},{"name":"banner"},{"name":"panel"}]
+}

@@ -1,0 +1,128 @@
+.my-element3 {
+	background: psd("test.psd", "my layer name");
+}
+
+.my-element2 {
+	background: psd("test.psd", "my layer name", "styles");
+}
+
+.my-element1 {
+	background-color: psd("test.psd", "my layer name", "background-color", "rem");
+}
+
+@define-flowlane 90 {
+	breakpoints: max; 
+	min-width: 300;
+	max-width: 3000;
+	max-scale: 4;
+	min-scale: 0.25;
+}
+
+@define-flowlane 120 {
+	breakpoints: min; 
+	min-width: 200;
+	min-scale: 0.25;
+}
+
+@define-flowlane 120 {
+	breakpoints: max;
+}
+
+.element-thing, {
+	color: purple;
+}
+
+body {
+   font-family: "Alice";
+}
+
+@media screen and (width: 300) {
+	.element {
+		background: blue;
+		face: that;
+
+		@ad (width > 100px) {
+			content: "1";
+		}
+	}
+
+	@location (city: "Chicago"), (state: "Illinois") {
+		.element-two, .element-three {
+			background: red;
+			font-family: "Lato";
+			font-weight: 700;
+			@ad (width: 100) {
+				background: red;
+			}
+		}
+	}
+
+	@location (state: 'Illinois') and (city: "springfield") {
+		.element-two {
+			background: red;
+			font-family: "Alice";
+			font-weight: 700;
+		}
+	}
+
+	@device (viewport > 700px) {
+		.element-two {
+			background: orange;
+		}
+	}
+
+	@layout ([*-480]x[*]/[481-767]x[*]/728x90/[992-119]x[*]) {
+		.element-six {
+			something: nothing;
+			@device (face: none) {
+				something: else;
+			}
+		}
+	}
+}
+
+@device (viewport > 800) {
+	.element-eight {
+		test: test;
+	}
+}
+
+@flowlane 90 {
+	.element-whatever {
+		background: blue;
+
+		@breakpoint 80 {
+			background: red;
+		}
+	}
+}
+
+@flowlane 111 {
+	.element-whatever {
+		background: blue;
+
+		@breakpoint 998 {
+			background: red;
+		}
+
+		@breakpoint 78 {
+			background: red;
+		}
+
+		@breakpoint 54 {
+			background: red;
+		}
+
+		@breakpoint 2324 {
+			background: red;
+		}
+
+		@breakpoint 432 {
+			background: red;
+		}
+
+		@breakpoint 18 {
+			background: red;
+		}
+	}
+}

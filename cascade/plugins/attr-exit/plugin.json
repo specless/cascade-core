@@ -1,0 +1,9 @@
+{
+	"name": "attr-exit",
+	"type": "htmlAttr",
+	"config" : {
+		"name": "exit",
+		"logCategory" : "tracking",
+		"logValueAgainst" : "exits"
+	}
+}

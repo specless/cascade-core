@@ -1,0 +1,29 @@
+{
+	"version" : 100,
+	"csfVersion" : 622,
+	"css" : {
+		"dir" : "/scss",
+		"coreFile" : "/cascade.scss"
+	},
+	"html" : {
+		"dir" : "/html",
+		"top" : "/top.html",
+		"bottom" : "/bottom.html"
+	},
+	"js" : {
+		"dir" : "/js",
+		"top" : "/user-top.js.template",
+		"bottom" : "/user-bottom.js.template"
+	},
+	"projectStructure" : {
+		"assetsDir" : "/assets",
+		"componentHtml" : "/index.html",
+		"componentJs" : "/index.js",
+		"componentCss" : "/index.css",
+		"settingsPath" : "/_settings.json"
+	},
+	"blankProjectDir" : "/blank_project",
+	"defaultProjectDir" : "/default_project",
+	"pluginsDir" : "/plugins",
+	"pluginsConfig" : "/plugin.json"
+}

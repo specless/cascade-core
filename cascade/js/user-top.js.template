@@ -1,0 +1,7 @@
+window.Specless.userJS(window, function (specless, _, extendFrom, factories, ad, $, plugins) {
+
+	ad.activateLocation(function() {
+		ad.requires(["http://s.specless.io/frame/1/scripts/vendor.registerelement_test", "http://s.specless.io/frame/1/scripts/plugins.adelements_test"], function(){
+			plugins.AdElements();
+
+//================= Begin User JS =================

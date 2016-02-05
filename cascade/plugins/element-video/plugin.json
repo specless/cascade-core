@@ -1,0 +1,14 @@
+{
+	"name": "video",
+	"type": "element",
+	"config" : {
+		"name": "ad-video",
+		"css" : "/index.scss",
+		"js" : "/index.js",
+		"jsDependencies" : [
+			"/vendor/videojs.js"
+		],
+		"logCategory" : "adElements",
+		"logValueAgainst" : "ad-video"
+	}
+}
