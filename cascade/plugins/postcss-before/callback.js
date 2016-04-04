@@ -1,4 +1,4 @@
-var postcss = require('postcss');
+var postcss = app.utils.postcss;
 var pluginJson = require(__dirname + '/plugin.json');
 
 module.exports = postcss.plugin('blank', function () {
