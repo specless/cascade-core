@@ -1,14 +1,35 @@
 {
-	"name": "video",
+	"name": "element-video",
 	"type": "element",
 	"config" : {
 		"name": "ad-video",
 		"css" : "/index.scss",
 		"js" : "/index.js",
+		"callback" : "/callback.js",
 		"jsDependencies" : [
-			"/vendor/videojs.js"
+			"videojs"
 		],
 		"logCategory" : "adElements",
 		"logValueAgainst" : "ad-video"
+	},
+	"defaultOptions" : {
+		"id": "defaultPlayerId",
+                "player-type": "html5",
+                "src": "https://player.vimeo.com/external/151824040.hd.mp4?s=9ad8930ab5dc58ed88703c2edc9193dcf07938fd&profile_id=113",
+                "name": null,
+                "sizing": "contain",
+                "autoplay": false,
+                "controls": false,
+                "preload": "auto",
+                "poster": null,
+                "muted": false,
+                "wallpaper": false,
+                "loop": false,
+                "inline-audio-src": false,
+                "aspect": [16, 9],
+                "audio-hover": false,
+                "simple-controls": false,
+                "view-toggle-off": false,
+                "data-exit": false
 	}
 }

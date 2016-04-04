@@ -1,0 +1,9 @@
+{
+	"name": "attr-timer-start",
+	"type": "htmlAttr",
+	"config" : {
+		"name": "timer-start",
+		"logCategory" : "tracking",
+		"logValueAgainst" : "timers"
+	}
+}

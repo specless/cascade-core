@@ -1,0 +1,9 @@
+{
+	"name": "attr-collapse",
+	"type": "htmlAttr",
+	"config" : {
+		"name": "collapse",
+		"logCategory" : "tracking",
+		"logValueAgainst" : "collapsers"
+	}
+}

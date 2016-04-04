@@ -1,0 +1,10 @@
+{
+	"name": "attr-third-party-track",
+	"type": "htmlAttr",
+	"config" : {
+		"name": "third-party-track",
+		"callback" : "/callback.js",
+		"logCategory" : "tracking",
+		"logValueAgainst" : "thirdPartyTrackers"
+	}
+}

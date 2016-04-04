@@ -1,0 +1,10 @@
+{
+	"name": "postcss-before",
+	"type": "postcss",
+	"config" : {
+		"name": "postcss-before",
+		"runs" : "before",
+		"script": "/callback.js",
+		"logValueAgainst" : "postcss"
+	}
+}

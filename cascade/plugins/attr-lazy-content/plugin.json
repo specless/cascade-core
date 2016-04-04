@@ -1,0 +1,12 @@
+{
+	"name": "attr-lazy-content",
+	"type": "htmlAttr",
+	"config" : {
+		"name": "lazy-content",
+		"callback" : "/callback.js",
+		"logCategory" : "lazyContent",
+		"logValueAgainst" : "sections",
+		"css" : "/index.scss",
+		"js" : "/index.js"
+	}
+}

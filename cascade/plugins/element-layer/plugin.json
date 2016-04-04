@@ -1,0 +1,11 @@
+{
+	"name": "element-layer",
+	"type": "element",
+	"config" : {
+		"name": "ad-layer",
+		"css" : "/index.scss",
+		"callback" : "/callback.js",
+		"logCategory" : "adElements",
+		"logValueAgainst" : "ad-layer"
+	}
+}

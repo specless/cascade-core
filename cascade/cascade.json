@@ -1,29 +1,68 @@
 {
 	"version" : 100,
-	"csfVersion" : 622,
+	"csfVersion" : 623,
+	"supportedAssets" : ["png","jpg","jpeg","gif","webp","tif","tiff","bmp","svg","mp4","ogg","wav","mp3","jsv","js","html","css","json","xsl","xslx","csv","pdf"],
 	"css" : {
 		"dir" : "/scss",
 		"coreFile" : "/cascade.scss"
 	},
 	"html" : {
 		"dir" : "/html",
-		"top" : "/top.html",
-		"bottom" : "/bottom.html"
+		"htmlTemplate" : "/component.html"
 	},
 	"js" : {
 		"dir" : "/js",
-		"top" : "/user-top.js.template",
-		"bottom" : "/user-bottom.js.template"
+		"userjsTemplate" : "/userjs.js"
 	},
 	"projectStructure" : {
 		"assetsDir" : "/assets",
 		"componentHtml" : "/index.html",
 		"componentJs" : "/index.js",
-		"componentCss" : "/index.css",
-		"settingsPath" : "/_settings.json"
+		"componentCss" : "/index.scss",
+		"settingsPath" : "/_settings.json",
+		"globalScss" : "/_global.scss"
 	},
 	"blankProjectDir" : "/blank_project",
 	"defaultProjectDir" : "/default_project",
 	"pluginsDir" : "/plugins",
-	"pluginsConfig" : "/plugin.json"
+	"macIconPath" : "/project-folder.icns",
+	"pluginsConfig" : "/plugin.json",
+	"whiteListedDependencies" : [
+		{
+			"name" : "videojs",
+			"url" : "https://vjs.zencdn.net/5.2.4/video.js"
+		},
+		{
+			"name" : "jquery",
+			"url" : "https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"
+		},
+		{
+			"name" : "greensock-tweenlite",
+			"url" : "https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.2/TweenLite.min.js"
+		},
+		{
+			"name" : "greensock-tweenmax",
+			"url" : "https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.2/TweenMax.min.js"
+		},
+		{
+			"name" : "greensock-cssplugin",
+			"url" : "http://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.2/plugins/CSSPlugin.min.js"
+		},
+		{
+			"name" : "greensock-easepack",
+			"url" : "http://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.2/easing/EasePack.min.js"
+		},
+		{
+			"name" : "greensock-timelinelite",
+			"url" : "https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.2/TimelineLite.min.js"
+		},
+		{
+			"name" : "greensock-timelinemax",
+			"url" : "https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.2/TimelineMax.min.js"
+		},
+		{
+			"name" : "createjs",
+			"url" : "https://code.createjs.com/createjs-2015.11.26.min.js"
+		}
+	]
 }

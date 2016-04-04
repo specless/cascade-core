@@ -1,0 +1,10 @@
+{
+	"name": "postcss-after",
+	"type": "postcss",
+	"config" : {
+		"name": "postcss-after",
+		"runs" : "after",
+		"script": "/callback.js",
+		"logValueAgainst" : "postcss"
+	}
+}

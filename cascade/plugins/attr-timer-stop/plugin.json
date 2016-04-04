@@ -1,0 +1,9 @@
+{
+	"name": "attr-timer-stop",
+	"type": "htmlAttr",
+	"config" : {
+		"name": "timer-stop",
+		"logCategory" : "tracking",
+		"logValueAgainst" : "timers"
+	}
+}

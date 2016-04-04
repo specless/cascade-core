@@ -1,0 +1,9 @@
+{
+	"name": "attr-expand",
+	"type": "htmlAttr",
+	"config" : {
+		"name": "expand",
+		"logCategory" : "tracking",
+		"logValueAgainst" : "expanders"
+	}
+}

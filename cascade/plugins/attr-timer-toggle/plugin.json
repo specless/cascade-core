@@ -1,0 +1,9 @@
+{
+	"name": "attr-timer-toggle",
+	"type": "htmlAttr",
+	"config" : {
+		"name": "timer-toggle",
+		"logCategory" : "tracking",
+		"logValueAgainst" : "timers"
+	}
+}

@@ -1,0 +1,9 @@
+{
+	"name": "attr-count",
+	"type": "htmlAttr",
+	"config" : {
+		"name": "count",
+		"logCategory" : "tracking",
+		"logValueAgainst" : "counters"
+	}
+}

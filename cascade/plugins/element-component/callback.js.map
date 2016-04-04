@@ -1,0 +1,1 @@
+{"version":3,"names":[],"mappings":"","sources":["data/cascade-core/cascade/plugins/element-component/callback.js"],"sourcesContent":["module.exports = function(api, node) {\n\tapi.addScriptFragment(\"var myvideo = 'is Pretty Awesome';\");\n\treturn node;\n}"],"file":"data/cascade-core/cascade/plugins/element-component/callback.js","sourceRoot":"/source/"}

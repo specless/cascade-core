@@ -1,0 +1,7 @@
+{
+	"name": "js-include",
+	"config" : {
+		"callback" : "/callback.js",
+		"js" : "/index.js"
+	}
+}

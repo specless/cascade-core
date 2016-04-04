@@ -1,0 +1,11 @@
+{
+	"name": "element-loading-icon",
+	"type": "element",
+	"config" : {
+		"name": "ad-loading-icon",
+		"css" : "/index.scss",
+		"callback" : "/callback.js",
+		"logCategory" : "adElements",
+		"logValueAgainst" : "ad-loading-icon"
+	}
+}

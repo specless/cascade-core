@@ -1,0 +1,11 @@
+{
+	"name": "element-close-button",
+	"type": "element",
+	"config" : {
+		"name": "ad-close-button",
+		"css" : "/index.scss",
+		"callback" : "/callback.js",
+		"logCategory" : "adElements",
+		"logValueAgainst" : "ad-close-button"
+	}
+}

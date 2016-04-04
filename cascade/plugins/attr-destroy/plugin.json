@@ -1,0 +1,9 @@
+{
+	"name": "attr-destroy",
+	"type": "htmlAttr",
+	"config" : {
+		"name": "destroy",
+		"logCategory" : "tracking",
+		"logValueAgainst" : "destroyers"
+	}
+}

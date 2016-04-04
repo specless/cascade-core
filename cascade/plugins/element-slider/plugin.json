@@ -1,0 +1,18 @@
+{
+	"name": "element-slider",
+	"type": "element",
+	"config" : {
+		"name": "ad-slider",
+		"css" : "/index.scss",
+		"js" : "/index.js",
+		"callback" : "/callback.js",
+		"jsDependencies" : [
+			"/swiper.js"
+		],
+		"logCategory" : "adElements",
+		"logValueAgainst" : "ad-slider"
+	},
+	"defaultOptions" : {
+		
+	}
+}

@@ -1,0 +1,11 @@
+{
+	"name": "element-component",
+	"type": "element",
+	"config" : {
+		"name": "ad-component",
+		"css" : "/index.scss",
+		"callback" : "/callback.js",
+		"logCategory" : "adElements",
+		"logValueAgainst" : "ad-component"
+	}
+}

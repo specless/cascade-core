@@ -1,0 +1,9 @@
+{
+	"name": "attr-close",
+	"type": "htmlAttr",
+	"config" : {
+		"name": "close",
+		"logCategory" : "tracking",
+		"logValueAgainst" : "closers"
+	}
+}

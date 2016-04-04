@@ -1,0 +1,17 @@
+[data-lazy-state='waiting'] {
+	[data-lazy-content-loader] {
+		visibility: hidden;
+	}
+}
+
+[data-lazy-state='loading'] {
+	[data-lazy-content-loader] {
+		visibility: visible;
+	}
+}
+
+[data-lazy-state='ready'] {
+	[data-lazy-content-loader] {
+		visibility: hidden;
+	}
+}
