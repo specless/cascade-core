@@ -1,8 +1,92 @@
 {
-	"name" : "My Awesome Ad",
-	"lastUpdated" : "March 1, 1983 01:15:00",
-	"cascadeVersion": "99",
-	"csfVersion": "622",
-	"path": "users/..../folder",
-	"components": [{"name":"loader"},{"name":"banner"},{"name":"panel"}]
+  "name": "My Awesome Ad",
+  "lastUpdated": "March 1, 1983 01:15:00",
+  "cascadeVersion": 100,
+  "csfVersion": 623,
+  "path": "/Users/scorby/Dev/cascade-core/cascade-core/cascade/default_project",
+  "components": [{
+    "name": "banner",
+    "plugins": [{
+      "name": "element-component",
+      "type": "element",
+      "config": {
+        "name": "ad-component",
+        "css": "/index.scss",
+        "callback": "/callback.js",
+        "logCategory": "adElements",
+        "logValueAgainst": "ad-component"
+      },
+      "path": "/Users/scorby/Dev/cascade-core/cascade-core/cascade/plugins/element-component"
+    }],
+    "assets": {
+      "inHtml": [],
+      "inCss": [],
+      "inJs": []
+    },
+    "adElements": {
+      "ad-component": [{
+        "data-element": "component"
+      }]
+    },
+    "externalDependencies": []
+  }, {
+    "name": "loader",
+    "plugins": [{
+      "name": "element-component",
+      "type": "element",
+      "config": {
+        "name": "ad-component",
+        "css": "/index.scss",
+        "callback": "/callback.js",
+        "logCategory": "adElements",
+        "logValueAgainst": "ad-component"
+      },
+      "path": "/Users/scorby/Dev/cascade-core/cascade-core/cascade/plugins/element-component"
+    }],
+    "assets": {
+      "inHtml": [],
+      "inCss": [],
+      "inJs": []
+    },
+    "adElements": {
+      "ad-component": [{
+        "data-element": "component"
+      }]
+    },
+    "externalDependencies": []
+  }, {
+    "name": "panel",
+    "plugins": [{
+      "name": "element-component",
+      "type": "element",
+      "config": {
+        "name": "ad-component",
+        "css": "/index.scss",
+        "callback": "/callback.js",
+        "logCategory": "adElements",
+        "logValueAgainst": "ad-component"
+      },
+      "path": "/Users/scorby/Dev/cascade-core/cascade-core/cascade/plugins/element-component"
+    }],
+    "assets": {
+      "inHtml": [],
+      "inCss": [],
+      "inJs": []
+    },
+    "adElements": {
+      "ad-component": [{
+        "data-element": "component"
+      }]
+    },
+    "externalDependencies": []
+  }],
+  "imageSprites": [],
+  "lastPreviewSize": {
+    "w": 934,
+    "h": 418
+  },
+  "lastPreviewSizeOther": {
+    "w": 934,
+    "h": 418
+  }
 }

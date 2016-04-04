@@ -56,7 +56,7 @@ module.exports = function(api, node) {
 		node.content.splice(1, 0, wrapper);
 	}
 	options = JSON.stringify(options);
-	var script = "plugins.Slider('" + id + "'," + options + ");";
+	var script = "ad.plugins.Slider('" + id + "'," + options + ");";
 	api.addScriptFragment(script);
 	return node;
 }
