@@ -52,7 +52,7 @@ Example:
 
 Example with size range:
 ```
-@ layout ([728-970]x90) {
+@layout ([728-970]x90) {
 	// Styles that apply when the ad is between 728 and 970 px wide and 90px tall go here.
 }
 ```
@@ -123,7 +123,7 @@ Ranges:
 Explicit matches-- if the context returns a list of possible values, sometimes you may want to match a scenario that only matches a single value. For example format-expand-directions returns all directions that ad expands (example: 'n e'). If you want to match a scenario that is ONLY north and not any other directions, use the "only' flag:
 ```
 @format only (expand-directions: n) {
-	// Sylesfor a format that ONLY expands north go here. If it also expands east, the selector will not match.
+	// Syles for a format that ONLY expands north go here. If it also expands east, the selector will not match.
 }
 ```
 
