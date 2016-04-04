@@ -4,6 +4,19 @@
 
 Regardless where you are referring to a file from, as long as it is placed in the `assets` folder, then the path should start with `/assets/` (for example: `/assets/my-image.png`).
 
+## Viewing Output
+
+You can view each compiled asset on your localhost using the following URLs, 
+- HTML: `/[component]/`
+- CSS : `/[component]/css`
+- JS: `/[component]/js`
+- Setting: /settings
+
+For example:
+```
+http://localhost:8787/banner/css
+```
+
 ## CSS
 
 ### Flowlanes
