@@ -296,6 +296,34 @@ API call to load the content:
 ad.plugins.LazyContent("My Content").load()
 ```
 
+## Javascript
+
+### Include a Javascript Dependency from your Assets folder
+
+Make sure the dependency is in your `/assets/` folder and then include the following comment in the index.js file for the component that requires the dependency.
+```
+//@dependency '/assets/myfile.js'
+```
+
+### Include a White Listed 3rd Party Dependency
+
+You can include the following White Listed Dependencies, but including the appropriate comment in your index.js file.
+
+##### White Listed Dependencies
+- `videojs`
+- `jquery`
+- `greensock-tweenlight`
+- `greensock-tweenmax`
+- `greensock-timelinelite`
+- `greensock-timelinemax`
+- `greensock-easepack`
+- `greensock-cssplugin`
+- `createjs`
+
+```
+//@dependency 'jquery'
+```
+
 
 
 
