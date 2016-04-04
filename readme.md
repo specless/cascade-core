@@ -188,9 +188,10 @@ myVideo.loadNewVideo("/assets/video2.mp4", "New Video Name", "/assets/new-poster
 ##### Attributes
 Any of the parameters that are used in the Swiper API [here](http://idangero.us/swiper/api/#.VwLQzxIrLWY).
 
+Note: MUST contain a unique ID.
 ##### Example Usage
 ```
-<ad-slider>
+<ad-slider id="mySlider">
 	<ad-slider-slide>Slide 1</ad-slider-slide>
 	<ad-slider-slide>Slide 2</ad-slider-slide>
 	<ad-slider-slide>Slide 3</ad-slider-slide>
@@ -200,7 +201,7 @@ Any of the parameters that are used in the Swiper API [here](http://idangero.us/
 
 ##### Example Usage with optional Pagination, Prev/Next Buttons and Scrollbar
 ```
-<ad-slider>
+<ad-slider id="mySlider">
 	<ad-slider-slide>Slide 1</ad-slider-slide>
 	<ad-slider-slide>Slide 2</ad-slider-slide>
 	<ad-slider-slide>Slide 3</ad-slider-slide>
@@ -212,6 +213,82 @@ Any of the parameters that are used in the Swiper API [here](http://idangero.us/
 </ad-slider>
 ```
 
+
+### ad-close-button 
+Creates a close button with default styles
+##### Example:
+```
+<ad-close-button></ad-close-button>
+```
+
+
+### ad-loading-icon
+Creates a loading spinner with default styles
+##### Attributes
+- `type`: The animation type (`spin`, `flip`, or `pulse`)
+
+##### Example:
+```
+<ad-loading-icon type="flip"></ad-loading-icon>
+```
+
+## Ad Attributes
+
+Can be applied to any element. Example
+
+### exit
+```
+<div exit="My Exit"></div>
+```
+
+### collapse
+```
+<div collapse></div>
+```
+
+### expand
+```
+<div expand></div>
+```
+
+### timer-start
+```
+<div timer-start="My Timer"></div>
+```
+
+### timer-stop
+```
+<div timer-stop="My Timer"></div>
+```
+
+### timer-toggle
+```
+<div timer-toggle="My Timer"></div>
+```
+
+### count
+```
+<div count="My Counter"></div>
+```
+
+### count
+```
+<div third-party-track="My 1x1 Name"></div>
+```
+
+### lazy-content
+
+All interior contents if the specific element will not be loaded and added to the DOM, until the API call to load such content is called. 
+```
+<div lazy-content="My Content">
+	<!-- All Content in here will be removed when the ad is requested -- >
+</div>
+```
+
+API call to load the content: 
+```
+ad.plugins.LazyContent("My Content").load()
+```
 
 
 
