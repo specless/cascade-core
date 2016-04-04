@@ -213,6 +213,12 @@ Note: MUST contain a unique ID.
 </ad-slider>
 ```
 
+##### API Usage (using the Swiper API [here](http://idangero.us/swiper/api/#.VwLQzxIrLWY))
+```
+var mySlider = ad.plugins.Slider.get("mySlider");
+mySlider.slideNext();
+mySlider.slidePrev();
+```
 
 ### ad-close-button 
 Creates a close button with default styles
