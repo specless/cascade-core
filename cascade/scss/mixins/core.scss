@@ -1,0 +1,6 @@
+// Ad Element Mixin
+@mixin ad-($name) {
+	[data-element='#{$name}'] {
+		@content;
+	}
+}

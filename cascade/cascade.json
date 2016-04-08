@@ -1,5 +1,5 @@
 {
-	"version" : 100,
+	"version" : 101,
 	"csfVersion" : 623,
 	"supportedAssets" : ["png","jpg","jpeg","gif","webp","tif","tiff","bmp","svg","mp4","ogg","wav","mp3","jsv","js","html","css","json","xsl","xslx","csv","pdf"],
 	"supportedContexts" : ["time", "environment", "location", "user", "input", "device", "site", "format", "ad", "layout", "custom"],
