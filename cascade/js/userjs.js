@@ -1,36 +1,39 @@
 // First Require White Listed Exteral CDN Scripts =================
 ad.requires([{{{cdnscripts}}}], function() {
 
-	//==================  Begin Plugin Dependencies  ==============
+	ad.activateDevice(function() {
 
-	{{{dependencies}}}
+		//==================  Begin Plugin Dependencies  ==============
 
-	{{{includedDependencies}}}
+		{{{dependencies}}}
 
-	//===================  End Plugin Dependencies  ===============
+		{{{includedDependencies}}}
 
-	{{{license}}}
+		//===================  End Plugin Dependencies  ===============
 
-	//=================    Begin Cascade Plugins    ===============
+		{{{license}}}
 
-	{{{plugins}}}
+		//=================    Begin Cascade Plugins    ===============
 
-	//=================     End Cascade Plugins     ===============
+		{{{plugins}}}
 
-	window.Specless.userJS(window, function (specless, _, extendFrom, factories, ad, $, plugins) {
+		//=================     End Cascade Plugins     ===============
 
-		//========== Begin Plugin Generated Fragments =============
+		window.Specless.userJS(window, function (specless, _, extendFrom, factories, ad, $, plugins) {
 
-		{{{pluginfragments}}}
+			//========== Begin Plugin Generated Fragments =============
 
-		//==========  End Plugin Generated Fragments  =============
+			{{{pluginfragments}}}
+
+			//==========  End Plugin Generated Fragments  =============
 
 
-		//================ Begin User Created JS ==================
+			//================ Begin User Created JS ==================
 
-		{{{userjs}}}
+			{{{userjs}}}
 
-		//================  End User Created JS  ==================
+			//================  End User Created JS  ==================
 
+		});
 	});
 });

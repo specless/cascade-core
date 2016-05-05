@@ -1,28 +1,23 @@
 Specless.component('Video', window, function (specless, _, extendFrom, factories, ad, $, plugins) {
 	
 	plugins.Video = function(id, options) {
-		var promise = _.Promise();
-        ad.activateLocation(function() {
-			options.deviceType = ad.get("deviceType");
-			options = plugins.Video.parseOptions(options);
-            var players = plugins.Video.players;
-            // Check if this player has already been setup
-            if (_.has(players, options.id) === false) {
-    			plugins.Video.vjsSetup(id, options, function(player) {
-    				if (plugins.Video.players === undefined) {
-    					plugins.Video.players = {};
-    				}
-    				plugins.Video.players[id] = player;
-    				player._specless = options;
-    				plugins.Video.setupStyles(id);
-    				plugins.Video.applySizing(id);
-    				plugins.Video.setupTracking(id);
-    				plugins.Video.managePlayback(id);
-                    promise.resolve(plugins.Video.players[id]);
-    			});
-            }
-		});
-        return promise
+		options.deviceType = ad.get("deviceType");
+		options = plugins.Video.parseOptions(options);
+        var players = plugins.Video.players;
+        // Check if this player has already been setup
+        if (_.has(players, options.id) === false) {
+			plugins.Video.vjsSetup(id, options, function(player) {
+				if (plugins.Video.players === undefined) {
+					plugins.Video.players = {};
+				}
+				plugins.Video.players[id] = player;
+				player._specless = options;
+				plugins.Video.setupStyles(id);
+				plugins.Video.applySizing(id);
+				plugins.Video.setupTracking(id);
+				plugins.Video.managePlayback(id);
+			});
+        }
 	}
 
 	plugins.Video.parseOptions = function(options) {
