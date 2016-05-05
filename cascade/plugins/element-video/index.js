@@ -6,7 +6,17 @@ Specless.component('Video', window, function (specless, _, extendFrom, factories
         var players = plugins.Video.players;
         // Check if this player has already been setup
         if (_.has(players, options.id) === false) {
+            if (plugins.Video.players === undefined) {
+                plugins.Video.players = {};
+            }
+            plugins.Video.players[id] = {
+                fns : [],
+                ready: function(callback) {
+                    this.fns.push(callback);
+                }
+            }
 			plugins.Video.vjsSetup(id, options, function(player) {
+                var tempPlayer = plugins.Video.players[id];
 				if (plugins.Video.players === undefined) {
 					plugins.Video.players = {};
 				}
@@ -16,6 +26,9 @@ Specless.component('Video', window, function (specless, _, extendFrom, factories
 				plugins.Video.applySizing(id);
 				plugins.Video.setupTracking(id);
 				plugins.Video.managePlayback(id);
+                _.each(tempPlayer.fns, function(callback) {
+                    callback(plugins.Video.players[id]);
+                });
 			});
         }
 	}
