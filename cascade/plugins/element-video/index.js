@@ -1,7 +1,8 @@
 Specless.component('Video', window, function (specless, _, extendFrom, factories, ad, $, plugins) {
 	
 	plugins.Video = function(id, options) {
-		ad.activateLocation(function() {
+		var promise = _.Promise();
+        ad.activateLocation(function() {
 			options.deviceType = ad.get("deviceType");
 			options = plugins.Video.parseOptions(options);
             var players = plugins.Video.players;
@@ -17,9 +18,11 @@ Specless.component('Video', window, function (specless, _, extendFrom, factories
     				plugins.Video.applySizing(id);
     				plugins.Video.setupTracking(id);
     				plugins.Video.managePlayback(id);
+                    promise.resolve(plugins.Video.players[id]);
     			});
             }
 		});
+        return promise
 	}
 
 	plugins.Video.parseOptions = function(options) {
