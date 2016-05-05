@@ -1,3 +1,5 @@
+window.Specless.userJS(window, function (specless, _, extendFrom, factories, ad, $, plugins) {});
+
 // First Require White Listed Exteral CDN Scripts =================
 ad.requires([{{{cdnscripts}}}], function() {
 
